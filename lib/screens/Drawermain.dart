@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:excel/excel.dart';
+
 import 'package:fyp_project/screens/TimeTableView.dart';
 import 'package:fyp_project/screens/listofusers.dart';
 import 'package:fyp_project/login.dart';
@@ -49,13 +48,7 @@ class Drawermain extends StatelessWidget {
               ),
 
             ),
-            ListTile(
-              leading: Icon(Icons.calendar_month_rounded), title: Text("add timetable"),
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>TimeTable()));
-              },
-              
-            ),
+           
             ListTile(
               leading: Icon(Icons.calendar_month_rounded), title: Text("Add Faculty"),
               onTap: () {
